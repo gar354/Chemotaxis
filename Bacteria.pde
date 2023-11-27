@@ -4,16 +4,20 @@
   float y;
   float size;
   color bacteriumColor;
+  
   Bacterium() {
    bacteriumColor = getRandomColor();
    x = width / 2;
    y = height / 2;
    size = 20.0;
   }
+  
   void show() {
     fill(bacteriumColor);
+    strokeWeight(0);
     ellipse(x, y, size, size);
   }
+  
   void tick(float foodX, float foodY) {
     float xDiff = foodX - x;
     float yDiff = foodY - y;

@@ -4,6 +4,7 @@ class Food
   float y;
   float size;
   color foodColor;
+  
   Food(float _x, float _y) {
     x = _x;
     y = _y;
@@ -11,8 +12,10 @@ class Food
     foodColor = getRandomColor();
     show();
   }
+  
   void show() {
     fill(foodColor);
+    strokeWeight(0);
     ellipse(x, y, size, size);
   }
 }

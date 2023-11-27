@@ -26,7 +26,7 @@ void setup() {
 
 
 void draw() {
-  background(255, 255, 255, 1);
+  background(255);
   for (int i = 0; i < bacteriaAmount; i++) {
     Bacteria[i].tick(foodObject.x, foodObject.y);
   }
